@@ -30,6 +30,36 @@ eval("\r\nfunction checkDCE() {\r\n    /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ 
 
 /***/ }),
 
+/***/ "./node_modules/react-hot-loader/dist/react-hot-loader.production.min.js":
+/*!*******************************************************************************!*\
+  !*** ./node_modules/react-hot-loader/dist/react-hot-loader.production.min.js ***!
+  \*******************************************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+eval("\r\nfunction _interopDefault(e) { return e && \"object\" == typeof e && \"default\" in e ? e.default : e; }\r\nObject.defineProperty(exports, \"__esModule\", ({ value: !0 }));\r\nvar React = _interopDefault(__webpack_require__(/*! react */ \"./node_modules/react/index.js\"));\r\nfunction AppContainer(e) { return AppContainer.warnAboutHMRDisabled && (AppContainer.warnAboutHMRDisabled = !0, console.error(\"React-Hot-Loader: misconfiguration detected, using production version in non-production environment.\"), console.error(\"React-Hot-Loader: Hot Module Replacement is not enabled.\")), React.Children.only(e.children); }\r\nAppContainer.warnAboutHMRDisabled = !1;\r\nvar hot = function e() { return e.shouldWrapWithAppContainer ? function (e) { return function (n) { return React.createElement(AppContainer, null, React.createElement(e, n)); }; } : function (e) { return e; }; };\r\nhot.shouldWrapWithAppContainer = !1;\r\nvar areComponentsEqual = function (e, n) { return e === n; }, setConfig = function () { }, cold = function (e) { return e; }, configureComponent = function () { };\r\nexports.AppContainer = AppContainer, exports.hot = hot, exports.areComponentsEqual = areComponentsEqual, exports.setConfig = setConfig, exports.cold = cold, exports.configureComponent = configureComponent;\r\n\n\n//# sourceURL=webpack://react/./node_modules/react-hot-loader/dist/react-hot-loader.production.min.js?");
+
+/***/ }),
+
+/***/ "./node_modules/react-hot-loader/index.js":
+/*!************************************************!*\
+  !*** ./node_modules/react-hot-loader/index.js ***!
+  \************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("\r\nif (false) {}\r\nelse if (false) {}\r\nelse if (typeof window === 'undefined') {\r\n    // this is just server environment\r\n    module.exports = __webpack_require__(/*! ./dist/react-hot-loader.production.min.js */ \"./node_modules/react-hot-loader/dist/react-hot-loader.production.min.js\");\r\n}\r\nelse if (true) {\r\n    module.exports = __webpack_require__(/*! ./dist/react-hot-loader.production.min.js */ \"./node_modules/react-hot-loader/dist/react-hot-loader.production.min.js\");\r\n    module.exports.AppContainer.warnAboutHMRDisabled = true;\r\n    module.exports.hot.shouldWrapWithAppContainer = true;\r\n}\r\nelse { var jsFeaturesPresent, evalError, evalAllowed; }\r\n\n\n//# sourceURL=webpack://react/./node_modules/react-hot-loader/index.js?");
+
+/***/ }),
+
+/***/ "./node_modules/react-hot-loader/root.js":
+/*!***********************************************!*\
+  !*** ./node_modules/react-hot-loader/root.js ***!
+  \***********************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+eval("\r\nif (true) {\r\n    var hot = (__webpack_require__(/*! ./index */ \"./node_modules/react-hot-loader/index.js\").hot);\r\n    if (false) { var parent, cache; }\r\n    else {\r\n        fallbackHot();\r\n    }\r\n}\r\nelse {}\r\nfunction fallbackHot() {\r\n    exports.hot = function (a) {\r\n        return a;\r\n    };\r\n}\r\n\n\n//# sourceURL=webpack://react/./node_modules/react-hot-loader/root.js?");
+
+/***/ }),
+
 /***/ "./node_modules/react/cjs/react.development.js":
 /*!*****************************************************!*\
   !*** ./node_modules/react/cjs/react.development.js ***!
@@ -70,13 +100,23 @@ eval("\r\nif (false) {}\r\nelse {\r\n    module.exports = __webpack_require__(/*
 
 /***/ }),
 
+/***/ "./src/App.tsx":
+/*!*********************!*\
+  !*** ./src/App.tsx ***!
+  \*********************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\nexports.App = void 0;\r\nconst react_1 = __importDefault(__webpack_require__(/*! react */ \"./node_modules/react/index.js\"));\r\nconst root_1 = __webpack_require__(/*! react-hot-loader/root */ \"./node_modules/react-hot-loader/root.js\");\r\nfunction AppComponent() {\r\n    return (react_1.default.createElement(\"div\", null, \"content\"));\r\n}\r\nexports.App = (0, root_1.hot)(AppComponent);\r\n\n\n//# sourceURL=webpack://react/./src/App.tsx?");
+
+/***/ }),
+
 /***/ "./src/index.jsx":
 /*!***********************!*\
   !*** ./src/index.jsx ***!
   \***********************/
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
-eval("\r\nvar __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {\r\n    if (k2 === undefined) k2 = k;\r\n    var desc = Object.getOwnPropertyDescriptor(m, k);\r\n    if (!desc || (\"get\" in desc ? !m.__esModule : desc.writable || desc.configurable)) {\r\n      desc = { enumerable: true, get: function() { return m[k]; } };\r\n    }\r\n    Object.defineProperty(o, k2, desc);\r\n}) : (function(o, m, k, k2) {\r\n    if (k2 === undefined) k2 = k;\r\n    o[k2] = m[k];\r\n}));\r\nvar __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {\r\n    Object.defineProperty(o, \"default\", { enumerable: true, value: v });\r\n}) : function(o, v) {\r\n    o[\"default\"] = v;\r\n});\r\nvar __importStar = (this && this.__importStar) || function (mod) {\r\n    if (mod && mod.__esModule) return mod;\r\n    var result = {};\r\n    if (mod != null) for (var k in mod) if (k !== \"default\" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);\r\n    __setModuleDefault(result, mod);\r\n    return result;\r\n};\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\nconst React = __importStar(__webpack_require__(/*! react */ \"./node_modules/react/index.js\"));\r\nconst ReactDOM = __importStar(__webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\"));\r\nwindow.addEventListener('load', () => {\r\n    // второй элемент - это html элеменчик, куда наше все будет монтироваться\r\n    ReactDOM.render(React.createElement(Header, null), document.getElementById('react_root'));\r\n});\r\n\n\n//# sourceURL=webpack://react/./src/index.jsx?");
+eval("\r\nvar __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {\r\n    if (k2 === undefined) k2 = k;\r\n    var desc = Object.getOwnPropertyDescriptor(m, k);\r\n    if (!desc || (\"get\" in desc ? !m.__esModule : desc.writable || desc.configurable)) {\r\n      desc = { enumerable: true, get: function() { return m[k]; } };\r\n    }\r\n    Object.defineProperty(o, k2, desc);\r\n}) : (function(o, m, k, k2) {\r\n    if (k2 === undefined) k2 = k;\r\n    o[k2] = m[k];\r\n}));\r\nvar __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {\r\n    Object.defineProperty(o, \"default\", { enumerable: true, value: v });\r\n}) : function(o, v) {\r\n    o[\"default\"] = v;\r\n});\r\nvar __importStar = (this && this.__importStar) || function (mod) {\r\n    if (mod && mod.__esModule) return mod;\r\n    var result = {};\r\n    if (mod != null) for (var k in mod) if (k !== \"default\" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);\r\n    __setModuleDefault(result, mod);\r\n    return result;\r\n};\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\nconst React = __importStar(__webpack_require__(/*! react */ \"./node_modules/react/index.js\"));\r\nconst ReactDOM = __importStar(__webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\"));\r\nconst App_1 = __webpack_require__(/*! ./App */ \"./src/App.tsx\");\r\nwindow.addEventListener('load', () => {\r\n    // второй элемент - это html элеменчик, куда наше все будет монтироваться\r\n    ReactDOM.render(React.createElement(App_1.App, null), document.getElementById('react_root'));\r\n});\r\n\n\n//# sourceURL=webpack://react/./src/index.jsx?");
 
 /***/ })
 
