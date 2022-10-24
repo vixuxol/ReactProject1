@@ -47,6 +47,16 @@
     -webkit-box-orient: vertical;
 }
 
+.preview {
+    max-height: 178px;
+}
+
+.previewImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 @media all and (min-width: 1024px) {
     .textContent {
         padding: 40px;
