@@ -93,6 +93,39 @@
     background-color: rgba(51,51,51,0.1);
 }
 
+.controls {
+    padding: 10px 20px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.karmaCounter > * + * {
+    padding: 0 0 0 4px;
+}
+
+.karmaValue {
+    color: var(--greyC4);
+}
+
+svg.down {
+    transform: rotate(180deg);
+}
+
+.commentsButton {
+    display:flex;
+    align-items: normal;
+}
+
+.commentsButton * {
+    color: var(--greyC4)
+}
+
+.commentsNumber {
+    padding: 0 0 0 6px;
+    font-size: 12px;
+    line-height: 14px;
+}
 /* @media all and (min-width: 1024px) {
     .textContent {
         padding: 40px;
