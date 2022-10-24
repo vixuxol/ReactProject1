@@ -33,3 +33,9 @@ body {
     /* для разных устройств */
     font-smooth: revert;
 }
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
