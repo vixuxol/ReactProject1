@@ -1,0 +1,54 @@
+.card {
+    background-color: var(--white);
+    border-radius: 7px;
+    display: flex;
+    flex-flow: row wrap; 
+}
+
+.textContent {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 20px; 
+}
+
+.metaData {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.userLink {
+    margin-right: 10px;
+}
+
+.username {
+    color: var(--orange);
+}
+
+.card > * {
+    flex: 1 1 100%;
+}
+
+.createdAt, .createdAt * {
+    color: var(--grey99);
+}
+
+.title {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: normal;
+    margin: 0;
+    padding: 7px 0 0;
+}
+
+.postLink {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+@media all and (min-width: 1024px) {
+    .textContent {
+        padding: 40px;
+    }
+}
