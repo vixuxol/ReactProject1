@@ -10,27 +10,6 @@
     flex: 1 1 100%;
 }
 
-.menu {
-    position: absolute;
-    top: 17px;
-    right: 15px;
-}
-.menuButton {
-    width: 31px;
-    height: 31px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transform: rotate(90deg);
-    border-radius: 31px;
-    background: transparent;
-    border: 0;
-}
-
-.menuButton:active, .menuButton:hover {
-    background-color: rgba(51,51,51,0.1);
-}
-
 .controls {
     padding: 10px 20px;
     display: flex;
@@ -79,20 +58,6 @@ svg.down {
         padding: 40px 0;
         flex-flow: row nowrap;
     }
-
-    .menu {
-        position: static;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-basis: 50px; 
-        flex-grow: 1;
-        padding: 0 20px;
-    }
-
-    .menuButton {
-        transform: rotate(180deg);
-    }
        
     .controls {
         flex-flow: column nowrap;
@@ -134,10 +99,6 @@ svg.down {
     }
     .card:hover, .card:focus-within {
         outline: 1px solid var(--greyD9);
-    }
-
-    .menuButton:hover {
-        background-color: rgba(51,51,51,0.1);
     }
 
     .karmaCounter > button.up:hover > svg > path {
