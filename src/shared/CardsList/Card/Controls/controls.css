@@ -1,0 +1,94 @@
+.controls {
+    padding: 10px 20px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.karmaCounter > * + * {
+    padding: 0 0 0 4px;
+}
+
+.karmaValue {
+    color: var(--greyC4);
+}
+
+svg.down {
+    transform: rotate(180deg);
+}
+
+.commentsButton {
+    display:flex;
+    align-items: normal;
+}
+
+.commentsButton * {
+    color: var(--greyC4)
+}
+
+.commentsNumber {
+    padding: 0 0 0 6px;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.shareButton {
+    width: 20px;
+    height: 20px;
+}
+
+.saveButton {
+    width: 20px;
+    height: 20px;
+}
+
+@media all and (min-width: 1024px) {
+
+    .controls {
+        flex-flow: column nowrap;
+        justify-content: center;
+        flex-basis: 50px; 
+        align-items: center;
+        flex-grow: 0;
+        
+    }
+
+    .karmaCounter > * + * {
+        padding: 0;
+    }
+
+    .commentsButton * {
+        display: none;
+        visibility: hidden;
+    }
+    
+    .commentsNumber {
+        display: none;
+        visibility: hidden;
+    }
+    
+    .shareButton {
+        display: none;
+        visibility: hidden;
+    }
+    
+    .saveButton {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+@media all and (min-width: 1540px) {
+   
+    .karmaCounter > button.up:hover > svg > path {
+        fill: var(--green);
+    }
+
+    .karmaCounter > button.down:hover > svg > path {
+        fill: var(--orange);
+    }
+
+    .controls {
+        position:relative;
+    }
+}
