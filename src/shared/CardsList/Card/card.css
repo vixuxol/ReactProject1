@@ -126,6 +126,16 @@ svg.down {
     font-size: 12px;
     line-height: 14px;
 }
+
+.shareButton {
+    width: 20px;
+    height: 20px;
+}
+
+.saveButton {
+    width: 20px;
+    height: 20px;
+}
 /* @media all and (min-width: 1024px) {
     .textContent {
         padding: 40px;
