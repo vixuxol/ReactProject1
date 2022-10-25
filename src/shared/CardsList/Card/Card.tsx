@@ -1,18 +1,14 @@
 import React from 'react';
 import styles from './card.css';
 import { TextContent } from './TextContent';
+import { Preview } from './Preview';
 
 
 export function Card() {
   return (
     <li className = {styles.card}>
       <TextContent></TextContent>
-      <div className = {styles.preview}>
-        <img 
-          className = {styles.previewImg}
-          src = "https://cdn.dribbble.com/users/4567268/screenshots/19724290/media/b154bf6942032e9d68051287f435d960.png?compress=1&resize=450x338&vertical=top"
-      />
-      </div>
+      <Preview></Preview>
       <div className = {styles.menu}>
         <button className = {styles.menuButton}>
         <svg xmlns="http://www.w3.org/2000/svg" width="5" height="20" viewBox="0 0 5 20" fill="none" stroke-linecap="round" stroke-linejoin="round">
