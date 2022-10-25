@@ -15,7 +15,7 @@ export function Card() {
             <a href = "#user-url" className = {styles.username}>Кто-то ктотовский</a> 
           </div>
           <span className = {styles.createdAt}>
-            <span className = {styles.publishedLabel}>Опубликовано</span>
+            <span className = {styles.publishedLabel}>Опубликовано </span>
             4 часа назад
           </span>
         </div>
