@@ -18,7 +18,7 @@ export function Controls() {
       </button>
     </div>
     <button className = {styles.commentsButton}>
-    <svg width = "20" height = "20" viewBox="0 0 65 65" fill = "none" stroke="#999999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <svg width = "20" height = "20" viewBox="0 0 65 65" fill = "none" stroke="#999999" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
       <path d="M36.5,2.5h16c0.6,0,1-0.4,1-1s-0.4-1-1-1h-16c-0.6,0-1,0.4-1,1S35.9,2.5,36.5,2.5z" fill = "#999999"/>
       <path d="M56.5,2.5h2c0.6,0,1-0.4,1-1s-0.4-1-1-1h-2c-0.6,0-1,0.4-1,1S55.9,2.5,56.5,2.5z" fill = "#999999"/>
       <path d="M63.5,45.5c-0.6,0-1,0.4-1,1v7c0,0.6,0.4,1,1,1s1-0.4,1-1v-7C64.5,45.9,64.1,45.5,63.5,45.5z" fill = "#999999"/>
@@ -40,9 +40,9 @@ export function Controls() {
             viewBox="0 0 24 24"
             fill="none"
             stroke="#999999"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           >
             <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8" fill = "#C4C4C4"/>
             <polyline points="16 6 12 2 8 6" fill = "#C4C4C4"/>
@@ -57,9 +57,9 @@ export function Controls() {
             viewBox="0 0 24 24"
             fill="none"
             stroke="#999999"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           >
             <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" fill = "#C4C4C4"/>
             <polyline points="7 10 12 15 17 10" fill = "#C4C4C4"/>
