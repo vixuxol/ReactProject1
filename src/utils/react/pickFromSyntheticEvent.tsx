@@ -8,3 +8,7 @@ export function pickFromSyntheticEvent<T extends HTMLElement>() {
         //тут в качестве параметра - функция onChange (а ключ - это либо cheked, либо value) 
         <E extends ((t: T[K]) => void)>(fn: E) => (e: React.SyntheticEvent<T>) => fn(e.currentTarget[key]);
 }
+
+// В свою очередь функция getValue принимает на вход функцию, куда будет передано событие 
+export const getValue = pickFromSyntheticEvent<HTMLInputElement>()('value'); // тут указываем HTML элемент, куда будет применяться функция и один из ключей этого HTML элемента
+export const getChecked = pickFromSyntheticEvent<HTMLInputElement>()('checked')
