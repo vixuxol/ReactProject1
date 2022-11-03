@@ -2,7 +2,6 @@
     display: flex;
     cursor: pointer;
     align-items: center;
-   
 }
 
 .userBox:hover span {
