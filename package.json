@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:dev": "env NODE_ENV=development webpack --config webpack.config.js",
-    "build:prod": "env NODE_ENV=production webpack --config webpack.config.js",
-    "dev": "env NODE_ENV=development webpack-dev-server",
+    "build:dev": "SET NODE_ENV=development&& webpack --config webpack.config.js",
+    "build:prod": "SET NODE_ENV=production&& webpack --config webpack.config.js",
+    "dev": "SET NODE_ENV=development&& SET CLIENT_ID=&& webpack-dev-server",
     "test": "jest"
   },
   "author": "",
@@ -35,6 +35,8 @@
     "webpack-dev-server": "^4.11.1"
   },
   "dependencies": {
+    "axios": "^0.24.0",
+    "axios-https-proxy-fix": "^0.17.1",
     "classnames": "^2.3.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
