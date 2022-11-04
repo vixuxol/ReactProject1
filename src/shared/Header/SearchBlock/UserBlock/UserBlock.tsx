@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './userblock.css';
 import { EColor, Text } from '../../../Text';
 import { IconAnon } from '../../../icons';
+import { Break } from '../../../Break';
 
 interface IUserBlockProps {
   avatarSrc?: string;
@@ -19,7 +20,7 @@ export function UserBlock({ avatarSrc, username }: IUserBlockProps) {
           : <IconAnon />
         }
       </div>
-
+      <Break size = {4}></Break>
       <div className = {styles.username}>
         <Text size = {20} color = {username ? EColor.black : EColor.grey99}> {username || 'Аноним'} </Text>
       </div>
